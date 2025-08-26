@@ -10,18 +10,23 @@ export default function TabLayout() {
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: COLORS.accent,
-        tabBarInactiveTintColor: COLORS.grayLight, // Cor ajustada para melhor visibilidade
+        tabBarInactiveTintColor: COLORS.grayLight,
         tabBarStyle: {
           backgroundColor: COLORS.primary,
           borderTopColor: COLORS.grayMedium,
-          height: Platform.OS === 'ios' ? 90 : 70, // Altura ajustada para cada plataforma
+          height: Platform.OS === 'ios' ? 90 : 70,
           paddingTop: 10,
+          paddingBottom: Platform.OS === 'ios' ? 30 : 10,
         },
         tabBarLabelStyle: {
           fontSize: 12,
           fontWeight: "600",
-          marginBottom: 5,
+          marginBottom: Platform.OS === 'ios' ? 0 : 5,
         },
+        // Adiciona safe area para dispositivos com notch
+        tabBarSafeAreaInsets: {
+          bottom: Platform.OS === 'ios' ? 0 : 10,
+        }
       }}
     >
       <Tabs.Screen
@@ -29,6 +34,8 @@ export default function TabLayout() {
         options={{
           title: "Hoje",
           tabBarIcon: ({ color, size }) => <Home color={color} size={size} />,
+          // Adiciona acessibilidade
+          tabBarAccessibilityLabel: "Tela inicial com WOD do dia"
         }}
       />
       <Tabs.Screen
@@ -36,6 +43,7 @@ export default function TabLayout() {
         options={{
           title: "Explorar",
           tabBarIcon: ({ color, size }) => <Search color={color} size={size} />,
+          tabBarAccessibilityLabel: "Explorar treinos e exercícios"
         }}
       />
       <Tabs.Screen
@@ -43,6 +51,7 @@ export default function TabLayout() {
         options={{
           title: "Progresso",
           tabBarIcon: ({ color, size }) => <TrendingUp color={color} size={size} />,
+          tabBarAccessibilityLabel: "Seu progresso e recordes"
         }}
       />
       <Tabs.Screen
@@ -50,6 +59,7 @@ export default function TabLayout() {
         options={{
           title: "Perfil",
           tabBarIcon: ({ color, size }) => <User color={color} size={size} />,
+          tabBarAccessibilityLabel: "Seu perfil e configurações"
         }}
       />
     </Tabs>

@@ -8,6 +8,11 @@ import {
   Alert,
   TouchableOpacity,
   ActivityIndicator,
+  KeyboardAvoidingView,
+  Platform,
+  TouchableWithoutFeedback,
+  Keyboard,
+  ScrollView
 } from "react-native";
 import { router } from "expo-router";
 import { useAuthStore } from "@/store/auth-store";
@@ -21,65 +26,78 @@ export default function LoginScreen() {
   const { login } = useAuthStore();
 
   const handleLogin = async () => {
-    if (!email || !password) {
+    if (!email.trim() || !password.trim()) {
       Alert.alert("Campos incompletos", "Por favor, preencha o email e a senha.");
       return;
     }
-    
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      Alert.alert("Email inválido", "Por favor, insira um email válido.");
+      return;
+    }
+
     setIsLoading(true);
     try {
       await login(email, password);
-      // A navegação é tratada dentro da função `login` do store
     } catch (error) {
       Alert.alert("Erro no Login", "Não foi possível entrar. Verifique suas credenciais.");
+    } finally {
       setIsLoading(false);
     }
   };
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.content}>
-        <View style={styles.header}>
-          <Text style={styles.title}>Bem-vindo de Volta</Text>
-          <Text style={styles.subtitle}>Faça login para continuar seu progresso.</Text>
-        </View>
+        <KeyboardAvoidingView 
+          style={{ flex: 1 }}
+          behavior={Platform.OS === "ios" ? "padding" : "height"}
+        >
+          <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+              <ScrollView contentContainerStyle={styles.content}>
+                <View style={styles.header}>
+                  <Text style={styles.title}>Bem-vindo de Volta</Text>
+                  <Text style={styles.subtitle}>Faça login para continuar seu progresso.</Text>
+                </View>
 
-        <View style={styles.form}>
-          <TextInput
-            style={styles.input}
-            placeholder="Email"
-            placeholderTextColor={COLORS.grayMedium}
-            value={email}
-            onChangeText={setEmail}
-            keyboardType="email-address"
-            autoCapitalize="none"
-          />
-          
-          <TextInput
-            style={styles.input}
-            placeholder="Senha"
-            placeholderTextColor={COLORS.grayMedium}
-            value={password}
-            onChangeText={setPassword}
-            secureTextEntry
-          />
+                <View style={styles.form}>
+                  <TextInput
+                    style={styles.input}
+                    placeholder="Email"
+                    placeholderTextColor={COLORS.grayLight}
+                    value={email}
+                    onChangeText={setEmail}
+                    keyboardType="email-address"
+                    autoCapitalize="none"
+                  />
+                  
+                  <TextInput
+                    style={styles.input}
+                    placeholder="Senha"
+                    placeholderTextColor={COLORS.grayLight}
+                    value={password}
+                    onChangeText={setPassword}
+                    secureTextEntry
+                  />
 
-          <PrimaryButton 
-            title={isLoading ? "Entrando..." : "Entrar"} 
-            onPress={handleLogin}
-            disabled={isLoading}
-          />
-          {isLoading && <ActivityIndicator size="small" color={COLORS.white} style={{ marginTop: 10 }} />}
-        </View>
+                  <PrimaryButton 
+                    title={isLoading ? "" : "Entrar"} 
+                    onPress={handleLogin}
+                    disabled={isLoading}
+                    loading={isLoading}
+                  />
+                </View>
 
-        <View style={styles.footer}>
-          <TouchableOpacity onPress={() => router.push("/(auth)/register")}>
-            <Text style={styles.footerText}>
-              Não tem uma conta? <Text style={styles.link}>Cadastre-se</Text>
-            </Text>
-          </TouchableOpacity>
-        </View>
-      </View>
+                <View style={styles.footer}>
+                  <TouchableOpacity onPress={() => router.push("/(auth)/register")}>
+                    <Text style={styles.footerText}>
+                      Não tem uma conta? <Text style={styles.link}>Cadastre-se</Text>
+                    </Text>
+                  </TouchableOpacity>
+                </View>
+              </ScrollView>
+          </TouchableWithoutFeedback>
+        </KeyboardAvoidingView>
     </SafeAreaView>
   );
 }
@@ -90,7 +108,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.primary,
   },
   content: {
-    flex: 1,
+    flexGrow: 1,
     justifyContent: "center",
     paddingHorizontal: 24,
   },

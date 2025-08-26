@@ -1,5 +1,14 @@
 # Dependencies
 /node_modules
+/.yarn
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
 # Expo
 .expo/
@@ -9,29 +18,75 @@ expo-env.d.ts
 
 # Metro
 .metro-health-check*
+metro.config.js
+
+# Production builds
+*.apk
+*.aab
+*.ipa
+*.dSYM
+*.keystore
+*.jks
 
 # Native
 *.orig.*
-*.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
+*.pbxproj
 
 # Debug
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
+logs/
 
 # macOS
 .DS_Store
 *.pem
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # Local Env Files
-.env*.local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # TypeScript
 *.tsbuildinfo
+tsconfig.tsbuildinfo
 
 # Vercel
 .vercel
+.next
+
+# EAS
+eas-hooks-*.log
+
+# Testing
+coverage/
+.nyc_output
+
+# Temporary files
+tmp/
+temp/
