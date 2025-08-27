@@ -1,21 +1,22 @@
 💪 WOD App - Seu Companion de CrossFit
+Transforme seu treino em progresso mensurável.
 
-<div align="center">
-https://img.shields.io/badge/React%2520Native-Expo-61DAFB?style=for-the-badge&logo=expo
-https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript
-https://img.shields.io/badge/State%2520Management-Zustand-8A2BE2?style=for-the-badge
+<p align="center">
+<img src="https://img.shields.io/badge/React%20Native-Expo-61DAFB?style=for-the-badge&logo=expo" alt="React Native - Expo">
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript" alt="TypeScript">
+<img src="https://img.shields.io/badge/State%20Management-Zustand-8A2BE2?style=for-the-badge" alt="Zustand">
+</p>
 
-Transforme seu treino em progresso mensurável
-
-https://img.shields.io/badge/Features-%E2%9C%A8-FF6B6B
-https://img.shields.io/badge/Tech%2520Stack-%F0%9F%9B%A0%EF%B8%8F-4ECDC4
-https://img.shields.io/badge/Installation-%F0%9F%9A%80-45B7D1
-https://img.shields.io/badge/Screenshots-%F0%9F%93%B1-F7F7F7
-
-</div>
+<p align="center">
+<a href="#-sobre-o-projeto">Sobre</a> •
+<a href="#-features">Features</a> •
+<a href="#-tech-stack">Tecnologias</a> •
+<a href="#-instalação">Instalação</a> •
+<a href="#-como-usar">Como Usar</a> •
+<a href="#-contribuindo">Contribuindo</a>
+</p>
 
 🌟 Sobre o Projeto
-
 O WOD App é um aplicativo mobile completo para entusiastas de CrossFit e functional fitness que desejam acompanhar seus treinos, progresso e recordes pessoais de forma intuitiva e motivadora.
 
 🎯 Objetivo
@@ -23,194 +24,179 @@ O WOD App é um aplicativo mobile completo para entusiastas de CrossFit e functi
 Democratizar o acesso ao acompanhamento de treinos de alta intensidade, proporcionando uma experiência similar a ter um coach pessoal no seu bolso.
 
 ✨ Features
-
-🏋️‍♂️ Treinos Diários
-
-WOD do Dia: Treino aleatório diário com variedade garantida
-+50 Workouts: Biblioteca com workouts variados (AMRAP, For Time, EMOM, Tabata)
-Dificuldade Progressiva: workouts para todos os níveis (Beginner to Elite)
-
-
-📊 Acompanhamento de Progresso
-
-Histórico Completo: Todos seus treinos realizados em um lugar
-Recordes Pessoais: Acompanhe seus PRs automaticamente
-Estatísticas Detalhadas: Métricas de desempenho e consistência
-
-
-⏰ Timer Inteligente
-
-Timer Integrado: Contagem regressiva com alertas
-Score Automático: Cálculo de performance baseado no tempo
-Finalização Inteligente: Registro automático ao completar o treino
-
-
-🎨 Experiência do Usuário
-
-Design Intuitivo: Interface limpa e focada no treino
-Animações Suaves: Feedback visual gratificante
-Modo Escuro: Conforto visual em qualquer ambiente
-
-
-🔐 Gestão de Conta
-
-Autenticação Segura: Login e registro com validações
-Conta Demo: Experimente sem compromisso
-Dados Locais: Seus dados ficam no seu dispositivo
-
-
+Categoria	Funcionalidade	Descrição
+🏋️‍♂️ Treinos Diários	WOD do Dia	Treino aleatório diário com variedade garantida.
++50 Workouts	Biblioteca com workouts variados (AMRAP, For Time, EMOM, Tabata).
+Dificuldade Progressiva	Workouts para todos os níveis (Beginner to Elite).
+📊 Acompanhamento	Histórico Completo	Todos os seus treinos realizados em um único lugar.
+Recordes Pessoais (PRs)	Acompanhe seus PRs, que são atualizados automaticamente.
+Estatísticas Detalhadas	Métricas de desempenho e consistência para visualizar sua evolução.
+⏰ Timer Inteligente	Timer Integrado	Contagem regressiva e cronômetro com alertas sonoros e visuais.
+Score Automático	Cálculo de performance baseado no tempo e no tipo de treino.
+Finalização Inteligente	Registro automático do score ao completar o treino.
+🎨 Experiência do Usuário	Design Intuitivo	Interface limpa e focada na performance durante o treino.
+Animações Suaves	Feedback visual gratificante para uma experiência fluida.
+Modo Escuro	Conforto visual para treinar em qualquer ambiente ou horário.
+🔐 Gestão de Conta	Autenticação Segura	Login e registro com validações para proteger seus dados.
+Conta Demo	Experimente todas as funcionalidades do app sem compromisso.
+Dados Locais	Seus dados ficam armazenados de forma segura no seu dispositivo.
 🛠️ Tech Stack
+Abaixo estão as principais tecnologias e ferramentas utilizadas no desenvolvimento do WOD App:
 
-Frontend
+Frontend:
 
-React Native + Expo - Framework mobile
-TypeScript - Tipagem estática
-Zustand - Gerenciamento de estado
-React Navigation - Navegação
-Reanimated - Animações
-Lucide React Native - Ícones
+React Native + Expo - Framework de desenvolvimento mobile.
 
+TypeScript - Tipagem estática para um código mais robusto.
 
-Armazenamento
+Zustand - Gerenciamento de estado simples e poderoso.
 
-Async Storage - Persistência local
-Zustand Persist - Persistência automática do estado
+React Navigation - Solução completa para navegação.
 
+Animações e Ícones:
 
-Estilização
+React Native Reanimated - Criação de animações fluidas e de alto desempenho.
 
-StyleSheet - Estilos nativos
-CSS-in-JS - Estilos componentizados
+Lucide React Native - Biblioteca de ícones open-source.
 
+Armazenamento Local:
 
-Ferramentas
+Async Storage - Persistência de dados no dispositivo.
 
-Expo Router - Roteamento baseado em arquivos
-Expo Constants - Configurações do app
-React Native Reanimated - Animações de alto desempenho
+Zustand Persist Middleware - Persistência automática do estado global.
 
+Roteamento e Estilização:
+
+Expo Router - Roteamento baseado em arquivos (file-based routing).
+
+StyleSheet API - Estilização nativa para máxima performance.
 
 📦 Instalação
+Para rodar o projeto localmente, siga os passos abaixo.
 
 Pré-requisitos
 
-Node.js 16+
+Node.js (versão 16 ou superior)
+
 npm ou yarn
+
 Expo CLI (npm install -g expo-cli)
 
 Passo a Passo
 
-Clone o repositório
+Clone o repositório:
 
+Bash
 git clone https://github.com/seu-usuario/wod-app.git
 cd wod-app
+Instale as dependências:
 
-Instale as dependências
-
+Bash
 npm install
 # ou
 yarn install
+Execute o projeto:
 
-
-Execute o projeto
-
+Bash
 npx expo start
+Acesse o app:
 
+Escaneie o QR code gerado com o app Expo Go no seu celular (Android/iOS).
 
-Escaneie o QR code
-
-Use o app Expo Go no seu celular
-Ou execute em emulador Android/iOS
-
+Ou execute em um emulador Android/iOS no seu computador.
 
 🏗️ Estrutura do Projeto
+O projeto utiliza uma estrutura modular para facilitar a manutenção e escalabilidade.
 
-text
 src/
-├── app/                 # Rotas do Expo Router
-│   ├── (auth)/         # Autenticação
-│   ├── (tabs)/         # Tab navigation
-│   ├── workout/[id]    # Detalhes do workout
-│   └── timer/[id]      # Timer do workout
-├── components/         # Componentes reutilizáveis
-│   ├── PrimaryButton.tsx
-│   ├── AnimatedInput.tsx
-│   └── WorkoutCard.tsx
-├── constants/          # Constantes e configurações
-│   └── colors.ts       # Sistema de cores
-├── data/              # Dados estáticos
-│   └── workouts.ts    # Biblioteca de workouts
-├── store/             # Gerenciamento de estado
-│   ├── auth-store.ts  # Autenticação
-│   └── workout-store.ts # Dados de treino
-├── types/             # Definições TypeScript
-│   └── workout.ts     # Tipos de workout
-└── utils/             # Utilitários
-
+├── app/          # Rotas do Expo Router
+│   ├── (auth)/   # Rotas de autenticação
+│   ├── (tabs)/   # Rotas principais com Tab Navigation
+│   ├── workout/  # Detalhes e listagem de workouts
+│   └── timer/    # Tela do timer para o workout
+├── components/   # Componentes reutilizáveis
+├── constants/    # Constantes e configurações (cores, fontes)
+├── data/         # Dados estáticos (biblioteca de workouts)
+├── store/        # Gerenciamento de estado com Zustand
+├── types/        # Definições de tipos do TypeScript
+└── utils/        # Funções utilitárias
 🚀 Como Usar
+Primeiros Passos:
 
-Primeiros Passos
+Crie sua conta ou utilize a Conta Demo para explorar.
 
-Crie sua conta ou use a conta demo
-Explore a biblioteca de workouts disponíveis
-Inicie seu primeiro WOD no Timer
-Acompanhe seu progresso na aba Progresso
+Navegue pela biblioteca de workouts e conheça as opções.
 
+Inicie seu primeiro WOD na tela do Timer.
 
-Dicas de Uso
+Acompanhe sua evolução na aba "Progresso".
 
-💡 Use a conta demo para testar sem cadastro
-⭐ Favorite seus workouts preferidos
-📊 Revise seu histórico para ver progresso
-🏆 Desafie-se tentando bater seus PRs
+Dicas de Uso:
+
+💡 Use a conta demo para testar todas as features sem precisar se cadastrar.
+
+⭐ Favorite seus workouts preferidos para acessá-los rapidamente.
+
+📊 Revise seu histórico para identificar padrões e pontos de melhoria.
+
+🏆 Desafie-se constantemente tentando bater seus recordes pessoais (PRs).
+
 🤝 Contribuindo
+Contribuições são muito bem-vindas! Se você tem alguma ideia para melhorar o app, siga os passos:
 
+Faça um Fork do projeto.
 
-Contribuições são sempre bem-vindas!
+Crie uma nova branch para sua feature (git checkout -b feature/AmazingFeature).
 
-Fork o projeto
-Crie sua feature branch (git checkout -b feature/AmazingFeature)
-Commit suas mudanças (git commit -m 'Add some AmazingFeature')
-Push para a branch (git push origin feature/AmazingFeature)
-Abra um Pull Request
+Faça o commit das suas alterações (git commit -m 'Add some AmazingFeature').
 
+Faça o push para a sua branch (git push origin feature/AmazingFeature).
+
+Abra um Pull Request.
 
 📝 Próximas Features
+[ ] Sincronização de dados em nuvem.
 
-Sincronização em nuvem
-Compartilhamento de resultados
-Workouts personalizados
-Programação de treinos
-Comunidade e desafios
-Integração com wearables
-Modo competição
+[ ] Compartilhamento de resultados nas redes sociais.
 
+[ ] Criação de workouts personalizados.
+
+[ ] Agendamento de treinos (programação semanal/mensal).
+
+[ ] Integração com wearables (Apple Watch, Galaxy Watch).
 
 🐛 Reportar Bugs
+Encontrou um bug? Abra uma issue no GitHub detalhando:
 
-Encontrou um bug? Abra uma issue com:
+A descrição do problema.
 
-Descrição do problema
-Passos para reproduzir
-Screenshots (se aplicável)
-Dispositivo/versão do OS
+Os passos para reproduzi-lo.
 
+Screenshots, se aplicável.
 
 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para detalhes.
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 🙏 Agradecimentos
+À comunidade CrossFit por inspirar o projeto.
 
-Comunidade CrossFit por inspirar o projeto
-Expo por tornar o desenvolvimento mobile acessível
-Todos os contribuidores que ajudaram a melhorar o app
-<div align="center">
-Desenvolvido por dev-guirocha para a comunidade fitness
+Ao time do Expo por tornar o desenvolvimento mobile mais acessível.
 
-https://img.shields.io/badge/Twitter-@wodapp-1DA1F2?style=for-the-badge&logo=twitter
-https://img.shields.io/badge/Instagram-@wodapp-E4405F?style=for-the-badge&logo=instagram
+A todos os contribuidores que ajudam a melhorar o app.
 
-⭐ Deixe uma estrela no GitHub se você gostou do projeto!
+<p align="center">
+Desenvolvido por <b>dev-guirocha</b> para a comunidade fitness.
+</p>
 
-</div>
+<p align="center">
+<a href="https://twitter.com/wodapp" target="_blank">
+<img src="https://img.shields.io/badge/Twitter-@wodapp-1DA1F2?style=for-the-badge&logo=twitter" alt="Twitter">
+</a>
+<a href="https://instagram.com/wodapp" target="_blank">
+<img src="https://img.shields.io/badge/Instagram-@wodapp-E4405F?style=for-the-badge&logo=instagram" alt="Instagram">
+</a>
+</p>
+
+<p align="center">
+<b>⭐ Deixe uma estrela no GitHub se você gostou do projeto! ⭐</b>
+</p>
