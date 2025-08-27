@@ -1,202 +1,126 @@
-💪 WOD App - Seu Companion de CrossFit
-Transforme seu treino em progresso mensurável.
+# 💪 WOD App
+
+> Seu companion de CrossFit para transformar treinos em progresso mensurável.
 
 <p align="center">
-<img src="https://img.shields.io/badge/React%20Native-Expo-61DAFB?style=for-the-badge&logo=expo" alt="React Native - Expo">
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript" alt="TypeScript">
-<img src="https://img.shields.io/badge/State%20Management-Zustand-8A2BE2?style=for-the-badge" alt="Zustand">
+  <img src="https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=for-the-badge" alt="Status do Projeto">
+  <img src="https://img.shields.io/badge/React%20Native-Expo-61DAFB?style=for-the-badge&logo=expo" alt="React Native - Expo">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript" alt="TypeScript">
+  <img src="https://img.shields.io/badge/State%20Management-Zustand-8A2BE2?style=for-the-badge" alt="Zustand">
 </p>
 
 <p align="center">
-<a href="#-sobre-o-projeto">Sobre</a> •
-<a href="#-features">Features</a> •
-<a href="#-tech-stack">Tecnologias</a> •
-<a href="#-instalação">Instalação</a> •
-<a href="#-como-usar">Como Usar</a> •
-<a href="#-contribuindo">Contribuindo</a>
+  <a href="#-sobre-o-projeto">Sobre</a> •
+  <a href="#-principais-funcionalidades">Funcionalidades</a> •
+  <a href="#-tecnologias-utilizadas">Tecnologias</a> •
+  <a href="#-como-começar">Instalação</a> •
+  <a href="#-como-contribuir">Contribuir</a>
 </p>
 
-🌟 Sobre o Projeto
-O WOD App é um aplicativo mobile completo para entusiastas de CrossFit e functional fitness que desejam acompanhar seus treinos, progresso e recordes pessoais de forma intuitiva e motivadora.
+## 🎯 Sobre o Projeto
 
-🎯 Objetivo
+O **WOD App** foi criado para entusiastas de CrossFit e fitness funcional que buscam uma ferramenta simples e poderosa para registrar treinos, monitorar o progresso e quebrar recordes pessoais (PRs). O objetivo é oferecer uma experiência fluida e motivadora, como ter um coach pessoal no bolso.
 
-Democratizar o acesso ao acompanhamento de treinos de alta intensidade, proporcionando uma experiência similar a ter um coach pessoal no seu bolso.
+## ✨ Principais Funcionalidades
 
-✨ Features
-Categoria	Funcionalidade	Descrição
-🏋️‍♂️ Treinos Diários	WOD do Dia	Treino aleatório diário com variedade garantida.
-+50 Workouts	Biblioteca com workouts variados (AMRAP, For Time, EMOM, Tabata).
-Dificuldade Progressiva	Workouts para todos os níveis (Beginner to Elite).
-📊 Acompanhamento	Histórico Completo	Todos os seus treinos realizados em um único lugar.
-Recordes Pessoais (PRs)	Acompanhe seus PRs, que são atualizados automaticamente.
-Estatísticas Detalhadas	Métricas de desempenho e consistência para visualizar sua evolução.
-⏰ Timer Inteligente	Timer Integrado	Contagem regressiva e cronômetro com alertas sonoros e visuais.
-Score Automático	Cálculo de performance baseado no tempo e no tipo de treino.
-Finalização Inteligente	Registro automático do score ao completar o treino.
-🎨 Experiência do Usuário	Design Intuitivo	Interface limpa e focada na performance durante o treino.
-Animações Suaves	Feedback visual gratificante para uma experiência fluida.
-Modo Escuro	Conforto visual para treinar em qualquer ambiente ou horário.
-🔐 Gestão de Conta	Autenticação Segura	Login e registro com validações para proteger seus dados.
-Conta Demo	Experimente todas as funcionalidades do app sem compromisso.
-Dados Locais	Seus dados ficam armazenados de forma segura no seu dispositivo.
-🛠️ Tech Stack
-Abaixo estão as principais tecnologias e ferramentas utilizadas no desenvolvimento do WOD App:
+-   **🏋️‍♂️ Treinos Diários:**
+    -   **WOD do Dia:** Receba um treino novo e desafiador todos os dias.
+    -   **Biblioteca Extensa:** Mais de 50 workouts clássicos (AMRAP, For Time, EMOM, Tabata).
+    -   **Níveis de Dificuldade:** Adapte os treinos para seu nível, do iniciante ao elite.
 
-Frontend:
+-   **📊 Acompanhamento de Progresso:**
+    -   **Histórico Completo:** Visualize todos os treinos que você já realizou.
+    -   **Recordes Pessoais (PRs):** O app detecta e salva seus recordes automaticamente.
+    -   **Estatísticas Visuais:** Gráficos e métricas para acompanhar sua consistência e evolução.
 
-React Native + Expo - Framework de desenvolvimento mobile.
+-   **⏰ Timer Inteligente:**
+    -   **Timer Integrado:** Cronômetro, contagem regressiva e Tabata com alertas sonoros.
+    -   **Registro Automático:** Ao final do timer, seu score é calculado e salvo sem esforço.
 
-TypeScript - Tipagem estática para um código mais robusto.
+-   **🎨 Experiência de Usuário:**
+    -   **Design Limpo e Intuitivo:** Foco total no seu treino, sem distrações.
+    -   **Animações Fluidas:** Interações suaves que tornam o uso do app gratificante.
+    -   **Modo Escuro:** Conforto visual para treinar a qualquer hora do dia.
 
-Zustand - Gerenciamento de estado simples e poderoso.
+-   **🔐 Gestão de Conta:**
+    -   **Autenticação Segura:** Proteja seus dados com login e senha.
+    -   **Conta Demo:** Experimente o app por completo antes de se cadastrar.
+    -   **Privacidade:** Todos os seus dados são armazenados localmente no seu dispositivo.
 
-React Navigation - Solução completa para navegação.
+## 🚀 Tecnologias Utilizadas
 
-Animações e Ícones:
+Este projeto foi construído com ferramentas modernas do ecossistema JavaScript/TypeScript, focando em performance e escalabilidade.
 
-React Native Reanimated - Criação de animações fluidas e de alto desempenho.
+-   **Core:** React Native, Expo, TypeScript
+-   **Gerenciamento de Estado:** Zustand (com `persist` middleware)
+-   **Navegação:** Expo Router (roteamento baseado em arquivos)
+-   **UI & Animações:** React Native Reanimated, Lucide Icons, StyleSheet API
+-   **Armazenamento Local:** Async Storage
 
-Lucide React Native - Biblioteca de ícones open-source.
+## 🏁 Como Começar
 
-Armazenamento Local:
+Para executar o projeto em seu ambiente local, siga os passos abaixo.
 
-Async Storage - Persistência de dados no dispositivo.
+### Pré-requisitos
 
-Zustand Persist Middleware - Persistência automática do estado global.
+-   [Node.js](https://nodejs.org/en/) (LTS)
+-   [Yarn](https://yarnpkg.com/) ou npm
+-   [Expo Go](https://expo.dev/go) (app para celular) ou um emulador (Android Studio / Xcode)
 
-Roteamento e Estilização:
+### Instalação e Execução
 
-Expo Router - Roteamento baseado em arquivos (file-based routing).
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/wod-app.git](https://github.com/seu-usuario/wod-app.git)
+    cd wod-app
+    ```
 
-StyleSheet API - Estilização nativa para máxima performance.
+2.  **Instale as dependências:**
+    ```bash
+    yarn install
+    # ou
+    npm install
+    ```
 
-📦 Instalação
-Para rodar o projeto localmente, siga os passos abaixo.
+3.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npx expo start
+    ```
 
-Pré-requisitos
+4.  **Abra o aplicativo:**
+    -   Leia o QR Code com o app **Expo Go** no seu celular.
+    -   Ou pressione `a` para abrir no emulador Android ou `i` para o emulador iOS.
 
-Node.js (versão 16 ou superior)
+## 📂 Estrutura de Pastas
 
-npm ou yarn
-
-Expo CLI (npm install -g expo-cli)
-
-Passo a Passo
-
-Clone o repositório:
-
-Bash
-git clone https://github.com/seu-usuario/wod-app.git
-cd wod-app
-Instale as dependências:
-
-Bash
-npm install
-# ou
-yarn install
-Execute o projeto:
-
-Bash
-npx expo start
-Acesse o app:
-
-Escaneie o QR code gerado com o app Expo Go no seu celular (Android/iOS).
-
-Ou execute em um emulador Android/iOS no seu computador.
-
-🏗️ Estrutura do Projeto
-O projeto utiliza uma estrutura modular para facilitar a manutenção e escalabilidade.
+A estrutura do projeto foi pensada para ser intuitiva e escalável.
 
 src/
-├── app/          # Rotas do Expo Router
-│   ├── (auth)/   # Rotas de autenticação
-│   ├── (tabs)/   # Rotas principais com Tab Navigation
-│   ├── workout/  # Detalhes e listagem de workouts
-│   └── timer/    # Tela do timer para o workout
-├── components/   # Componentes reutilizáveis
-├── constants/    # Constantes e configurações (cores, fontes)
-├── data/         # Dados estáticos (biblioteca de workouts)
-├── store/        # Gerenciamento de estado com Zustand
-├── types/        # Definições de tipos do TypeScript
-└── utils/        # Funções utilitárias
-🚀 Como Usar
-Primeiros Passos:
+├── app/          # Rotas e telas (Expo Router)
+├── assets/       # Fontes, imagens e outros arquivos estáticos
+├── components/   # Componentes reutilizáveis (botões, inputs, cards)
+├── constants/    # Constantes globais (cores, dimensões)
+├── data/         # Mock data (lista de workouts)
+├── store/        # Lógica de estado global (Zustand)
+└── types/        # Definições de tipos do TypeScript
 
-Crie sua conta ou utilize a Conta Demo para explorar.
 
-Navegue pela biblioteca de workouts e conheça as opções.
+## 🤝 Como Contribuir
 
-Inicie seu primeiro WOD na tela do Timer.
+Contribuições são o que tornam a comunidade open-source um lugar incrível para aprender e criar. Qualquer contribuição que você fizer será **muito apreciada**.
 
-Acompanhe sua evolução na aba "Progresso".
+1.  Faça um **Fork** do projeto.
+2.  Crie uma **Branch** para sua feature (`git checkout -b feature/AmazingFeature`).
+3.  Faça o **Commit** de suas alterações (`git commit -m 'Add some AmazingFeature'`).
+4.  Faça o **Push** para a Branch (`git push origin feature/AmazingFeature`).
+5.  Abra um **Pull Request**.
 
-Dicas de Uso:
+## 📄 Licença
 
-💡 Use a conta demo para testar todas as features sem precisar se cadastrar.
+Distribuído sob a licença MIT. Veja `LICENSE.txt` para mais informações.
 
-⭐ Favorite seus workouts preferidos para acessá-los rapidamente.
-
-📊 Revise seu histórico para identificar padrões e pontos de melhoria.
-
-🏆 Desafie-se constantemente tentando bater seus recordes pessoais (PRs).
-
-🤝 Contribuindo
-Contribuições são muito bem-vindas! Se você tem alguma ideia para melhorar o app, siga os passos:
-
-Faça um Fork do projeto.
-
-Crie uma nova branch para sua feature (git checkout -b feature/AmazingFeature).
-
-Faça o commit das suas alterações (git commit -m 'Add some AmazingFeature').
-
-Faça o push para a sua branch (git push origin feature/AmazingFeature).
-
-Abra um Pull Request.
-
-📝 Próximas Features
-[ ] Sincronização de dados em nuvem.
-
-[ ] Compartilhamento de resultados nas redes sociais.
-
-[ ] Criação de workouts personalizados.
-
-[ ] Agendamento de treinos (programação semanal/mensal).
-
-[ ] Integração com wearables (Apple Watch, Galaxy Watch).
-
-🐛 Reportar Bugs
-Encontrou um bug? Abra uma issue no GitHub detalhando:
-
-A descrição do problema.
-
-Os passos para reproduzi-lo.
-
-Screenshots, se aplicável.
-
-📄 Licença
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
-🙏 Agradecimentos
-À comunidade CrossFit por inspirar o projeto.
-
-Ao time do Expo por tornar o desenvolvimento mobile mais acessível.
-
-A todos os contribuidores que ajudam a melhorar o app.
+---
 
 <p align="center">
-Desenvolvido por <b>dev-guirocha</b> para a comunidade fitness.
-</p>
-
-<p align="center">
-<a href="https://twitter.com/wodapp" target="_blank">
-<img src="https://img.shields.io/badge/Twitter-@wodapp-1DA1F2?style=for-the-badge&logo=twitter" alt="Twitter">
-</a>
-<a href="https://instagram.com/wodapp" target="_blank">
-<img src="https://img.shields.io/badge/Instagram-@wodapp-E4405F?style=for-the-badge&logo=instagram" alt="Instagram">
-</a>
-</p>
-
-<p align="center">
-<b>⭐ Deixe uma estrela no GitHub se você gostou do projeto! ⭐</b>
+  Feito com ❤️ por <b>dev-guirocha</b>
 </p>
